@@ -35,6 +35,9 @@
 </style>
 </head>
 <body>
+<form action="/Analyst Portal/analyst-index.php">
+<td colspan=1><input type="submit" name="submit" id="submit" value="Return Home" class="larger" /></td>	
+</form>
 <h2>Analyst Data</h2>
 
 <h4>Hardware and software performance</h4>
