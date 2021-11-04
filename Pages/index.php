@@ -52,7 +52,7 @@
 		<h1> Helpdesk System Login Page </h1>
 	</head>
 	<body>
-	  <form action="Helpdesk Portal/helpdesk-index.php" method="get" id="view">
+	  <form action="index.php" method="get" id="view" onSubmit="return loginCheck();">
 		<table border="1">
 		  <tr>
 			<td colspan=1><label for="username">Username</label></td>
@@ -63,10 +63,23 @@
 			<td colspan=1><input name="password" type="text" class="larger" id="password" value="" size="12" /></td>
 		  </tr>
 		  <tr>
-			<td colspan=2><input type="submit" name="submit" id="submit" value="Log In" class="larger" /></td>
+			<td colspan=2><input type="submit" name="submit" id="submit" value="Log In" class="larger" /></td>	
 		  </tr>
 		</table>
 		</form>
+		<script type=text/javascript>
+			function loginCheck() {
+			  if ((document.getElementById("username").value == "helpdesk") && (document.getElementById("password").value == "123")) {
+				document.getElementById("view").action = "Helpdesk Portal/helpdesk-index.php"
+			  }
+			  if ((document.getElementById("username").value == "specialist") && (document.getElementById("password").value == "234")) {
+				document.getElementById("view").action = "Specialist Portal/specialist-index.php"
+			  }
+			  if ((document.getElementById("username").value == "analyst") && (document.getElementById("password").value == "345")) {
+				document.getElementById("view").action = "Analyst Portal/analyst-index.php"
+			  }
+			}
+		</script>
 		
 		<table border="1">
 		  <tr>
