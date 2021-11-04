@@ -68,6 +68,12 @@
 			<td colspan=1><input type="submit" name="submit" id="submit" value="Browse" class="larger" /></td>	
 			</form>
 		  </tr>
+		  <tr>
+			<form action="/index.php">
+			<td colspan=1><input type="submit" name="submit" id="submit" value="Log Out" class="larger" /></td>	
+			</form>
+		  </tr>
+		  
 		
 		<?php
 			// Create connection

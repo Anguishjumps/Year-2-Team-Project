@@ -34,6 +34,9 @@ function problemdtb() {
 function callsdtb() {
 	window.location.assign ("/Tables/calls.php")
 }
+function returntoindex() {
+	window.location.assign ("/Helpdesk Portal/helpdesk-index.php")
+}
 
 </script>
 
@@ -48,6 +51,7 @@ td {
 </head>
 
 <body>
+<button type="button" id = "return" onclick = "returntoindex()" > Return Home </button>
 <h1> Browse </h1>
 <table>
 	<tr>
