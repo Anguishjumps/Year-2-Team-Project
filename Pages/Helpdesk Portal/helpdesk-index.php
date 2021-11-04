@@ -54,13 +54,19 @@
 	<body>
 		<table border="0">
 		  <tr>
+			<form action="">
 			<td colspan=1><input type="submit" name="submit" id="submit" value="Log Call" class="larger" /></td>	
+			</form>
 		  </tr>
 		  <tr>
+			<form action="">
 			<td colspan=1><input type="submit" name="submit" id="submit" value="View Problems" class="larger" /></td>	
+			</form>
 		  </tr>
 		  <tr>
+			<form action="/Helpdesk Portal/helpdesk-browse.php">
 			<td colspan=1><input type="submit" name="submit" id="submit" value="Browse" class="larger" /></td>	
+			</form>
 		  </tr>
 		
 		<?php

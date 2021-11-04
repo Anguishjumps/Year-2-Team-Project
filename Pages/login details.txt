@@ -1,3 +1,3 @@
-helpdesk 123
-specialist 1234
-analyst 12345
+helpdesk 123 0
+specialist 234 1
+analyst 345 2

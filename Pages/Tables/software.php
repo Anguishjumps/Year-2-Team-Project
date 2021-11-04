@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Specialist Database</title>
+<title>Software Database</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
 <script> 
 
 function returntobrowse() {
-	window.location.assign ("browse.php")
+	window.location.assign ("/Helpdesk Portal/helpdesk-browse.php")
 }
 
 </script>
@@ -42,32 +42,23 @@ th {
 
 <button type="button" id = "return" onclick = "returntobrowse()" > Return </button>
 
-<p> SPECIALISTS </p>
+<p> Software </p>
 
 <table>
 	
 	<tr>
-		<th> ID </th>
-		<th> First Name </th>
-		<th> Last Name </th>
-		<th> Areas of Expertise </th>
-		<th> Open Problems </th>
+		<th> Software </th>
+		<th> License Number </th>
 	</tr>
 	
 	<tr>
-		<td> S001 </td>
-		<td> Joshua </td>
-		<td> Smith </td>
-		<td> </td>
-		<td> 2 </td>
+		<td> Microsoft Office </td>
+		<td> 045-648-234 </td>
 	</tr>
 	
 	<tr>
-		<td> S002 </td>
-		<td> Jack </td>
-		<td> Peters </td>
-		<td> </td>
-		<td> 0 </td>
+		<td> Adobe Acrobat DC Pro </td>
+		<td> 456-101-214 </td>
 	</tr>
 	
 	
@@ -75,5 +66,3 @@ th {
 </table>
 
 </body>
-
-</html>

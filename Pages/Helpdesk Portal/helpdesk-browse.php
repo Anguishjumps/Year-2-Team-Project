@@ -12,27 +12,27 @@
 <script>
 
 function employeedtb() {
-	window.location.assign ("employee.php")
+	window.location.assign ("/Tables/employee.php")
 }
 
 function equipmentdtb() {
-	window.location.assign ("equipment.php")
+	window.location.assign ("/Tables/equipment.php")
 }
 
 function softwaredtb() {
-	window.location.assign ("software.php")
+	window.location.assign ("/Tables/software.php")
 }
 
 function specialistdtb() {
-	window.location.assign ("specialist.php")
+	window.location.assign ("/Tables/specialist.php")
 }
 
 function problemdtb() {
-	window.location.assign ("problem.php")
+	window.location.assign ("/Tables/problem.php")
 }
 
 function callsdtb() {
-	window.location.assign ("calls.php")
+	window.location.assign ("/Tables/calls.php")
 }
 
 </script>

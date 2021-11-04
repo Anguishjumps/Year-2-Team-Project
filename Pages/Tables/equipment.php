@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Software Database</title>
+<title>Equipment Database</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
 <script> 
 
 function returntobrowse() {
-	window.location.assign ("browse.php")
+	window.location.assign ("/Helpdesk Portal/helpdesk-browse.php")
 }
 
 </script>
@@ -42,23 +42,26 @@ th {
 
 <button type="button" id = "return" onclick = "returntobrowse()" > Return </button>
 
-<p> Software </p>
+<p> Equipment </p>
 
 <table>
 	
 	<tr>
-		<th> Software </th>
-		<th> License Number </th>
+		<th> Serial Number </th>
+		<th> Type </th>
+		<th> Make </th>
 	</tr>
 	
 	<tr>
-		<td> Microsoft Office </td>
-		<td> 045-648-234 </td>
+		<td> 56478890 </td>
+		<td> Printer </td>
+		<td> Samsung </td>
 	</tr>
 	
 	<tr>
-		<td> Adobe Acrobat DC Pro </td>
-		<td> 456-101-214 </td>
+		<td> 83245678 </td>
+		<td> Scanner </td>
+		<td> Samsung </td>
 	</tr>
 	
 	

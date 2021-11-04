@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Equipment Database</title>
+<title>Employee Database</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
 <script> 
 
 function returntobrowse() {
-	window.location.assign ("browse.php")
+	window.location.assign ("/Helpdesk Portal/helpdesk-browse.php")
 }
 
 </script>
@@ -42,26 +42,35 @@ th {
 
 <button type="button" id = "return" onclick = "returntobrowse()" > Return </button>
 
-<p> Equipment </p>
+<p> EMPLOYEES </p>
 
 <table>
 	
 	<tr>
-		<th> Serial Number </th>
-		<th> Type </th>
-		<th> Make </th>
+		<th> ID </th>
+		<th> First Name </th>
+		<th> Last Name </th>
+		<th> Job Title </th>
+		<th> Department </th>
+		<th> Telephone No. </th>
 	</tr>
 	
 	<tr>
-		<td> 56478890 </td>
-		<td> Printer </td>
-		<td> Samsung </td>
+		<td> 0001 </td>
+		<td> James </td>
+		<td> Hunt </td>
+		<td> Director </td>
+		<td> IT </td>
+		<td> 0712342118 </td>
 	</tr>
 	
 	<tr>
-		<td> 83245678 </td>
-		<td> Scanner </td>
-		<td> Samsung </td>
+		<td> 0002 </td>
+		<td> Alex </td>
+		<td> Johnson </td>
+		<td> Manager </td>
+		<td> Accounting </td>
+		<td> 0712309818 </td>
 	</tr>
 	
 	

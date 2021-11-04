@@ -12,7 +12,7 @@
 <script> 
 
 function returntobrowse() {
-	window.location.assign ("browse.php")
+	window.location.assign ("/Helpdesk Portal/helpdesk-browse.php")
 }
 
 </script>
