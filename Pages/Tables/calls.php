@@ -55,27 +55,37 @@ th {
 		<th> Reason for Call </th>
 		<th> Associated Problem ID's </th>
 	</tr>
-	
-	<tr>
-		<td> C001 </td>
-		<td> 0002 </td>
-		<td> John Smith </td>
-		<td> 30/10/2021 </td>
-		<td> 13:27 </td>
-		<td> Issue with printer </td>
-		<td> P001 </td>
-	</tr>
-	
-	<tr>
-		<td> C002 </td>
-		<td> 0010 </td>
-		<td> John Smith </td>
-		<td> 31/10/2021 </td>
-		<td> 09:10 </td>
-		<td> Issue with MS Office applications </td>
-		<td> P002 </td>
-	</tr>
-	
+<?php
+//Opens session on this page so call log table can be accessed
+	session_start();
+
+//*** PROOF OF CONCEPT FOR ADDING TO TABLES ***
+//Creates a new row array to be stored in the call log table 
+	$newRow = array(
+					"id" => "C003",
+					"cId" => "0020", 
+					"oName" => "John Smith", 
+					"date" => "31/10/2021",
+					"time" => "15:41",
+					"r4c" => "Issue with printer", 
+					"pId" => "P003"
+					);
+//Adds new row to the end of the call log aray
+	$_SESSION['call_log'][2] = $newRow;
+//*** PROOF OF CONCEPT FOR ADDING TO TABLES ***
+//Goes through each row in the call log table and echos it to the table.
+	foreach($_SESSION['call_log'] as $row){
+		echo(
+		"<tr><td>".$row['id']
+		."</td><td>".$row['cId']
+		."</td><td>".$row['oName']
+		."</td><td>".$row['date']
+		."</td><td>".$row['time']
+		."</td><td>".$row['r4c']
+		."</td><td>".$row['pId']
+		."</td></tr>");
+	};
+?>
 	
 	
 </table>

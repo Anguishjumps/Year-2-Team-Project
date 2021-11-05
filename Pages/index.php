@@ -44,6 +44,31 @@
 			}
 		</style>
 		<?php 
+//Opens sessions to allow 2d array to be passed between the webpages
+			session_start();
+//Creates start data for prototype call log table
+			$call_log = array(
+				array(
+					"id" => "C001",
+					"cId" => "0002", 
+					"oName" => "John Smith", 
+					"date" => "30/10/2021",
+					"time" => "13:27",
+					"r4c" => "Issue with printer", 
+					"pId" => "P001"
+					),
+				array(
+					"id" => "C002", 
+					"cId" => "0010", 
+					"oName" => "John Smith", 
+					"date" => "31/10/2021", 
+					"time" => "9:10",
+					"r4c" => "Issue with MS Office applications", 
+					"pId" => "P002",
+					)
+			);
+//Stores call log entrys in the session "call_log" array allowing other web pages to access it		
+			$_SESSION['call_log'] = $call_log;
 			$servername = "localhost"; //Data
 			$username = "team028";
 			$password = "R8U62QHHKN";
