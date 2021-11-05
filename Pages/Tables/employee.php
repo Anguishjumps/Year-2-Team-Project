@@ -66,14 +66,30 @@ th {
 	
 	<tr>
 		<td> 0002 </td>
-		<td> Alex </td>
+		<td> Peter </td>
 		<td> Johnson </td>
 		<td> Manager </td>
 		<td> Accounting </td>
 		<td> 0712309818 </td>
 	</tr>
 	
+	<tr>
+		<td> 0003 </td>
+		<td> Alex </td>
+		<td> Rider </td>
+		<td> Helpdesk Operator </td>
+		<td> IT </td>
+		<td> 0712655247 </td>
+	</tr>
 	
+	<tr>
+		<td> 0004 </td>
+		<td> Jack </td>
+		<td> Peters </td>
+		<td> Specialist </td>
+		<td> IT </td>
+		<td> 0712999874 </td>
+	</tr>
 	
 </table>
 
