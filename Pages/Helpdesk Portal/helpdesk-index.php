@@ -54,7 +54,7 @@
 	<body>
 		<table border="0">
 		  <tr>
-			<form action="">
+			<form action="/Helpdesk Portal/helpdesk-call_log.php">
 			<td colspan=1><input type="submit" name="submit" id="submit" value="Log Call" class="larger" /></td>	
 			</form>
 		  </tr>

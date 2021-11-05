@@ -59,20 +59,6 @@ th {
 //Opens session on this page so call log table can be accessed
 	session_start();
 
-//*** PROOF OF CONCEPT FOR ADDING TO TABLES ***
-//Creates a new row array to be stored in the call log table 
-	$newRow = array(
-					"id" => "C003",
-					"cId" => "0020", 
-					"oName" => "John Smith", 
-					"date" => "31/10/2021",
-					"time" => "15:41",
-					"r4c" => "Issue with printer", 
-					"pId" => "P003"
-					);
-//Adds new row to the end of the call log aray
-	$_SESSION['call_log'][2] = $newRow;
-//*** PROOF OF CONCEPT FOR ADDING TO TABLES ***
 //Goes through each row in the call log table and echos it to the table.
 	foreach($_SESSION['call_log'] as $row){
 		echo(
