@@ -43,7 +43,6 @@ function returntoindex() {
 		<th> Date </th>
 		<th> Time </th>
 		<th> Reason for Call </th>
-		<th> Associated Problem ID's </th>
 	</tr>
 <?php
 session_start();
@@ -59,7 +58,6 @@ for($x = 0; $x < 10; $x++){
 		."</td><td>".$_SESSION['call_log'][$x]['date']
 		."</td><td>".$_SESSION['call_log'][$x]['time']
 		."</td><td>".$_SESSION['call_log'][$x]['r4c']
-		."</td><td>".$_SESSION['call_log'][$x]['pId']
 		."</td></tr>");
 	};
 };
@@ -73,7 +71,6 @@ if(isset($_POST['submit'])) {
 		"date" => $_POST["date"],
 		"time" => $_POST["time"],
 		"r4c" => $_POST["r4c"], 
-		"pId" => $_POST["pId"]			
 	);
 //This array is then pushed onto the end of the call_log array
 	array_push($_SESSION['call_log'],$newCall);
@@ -94,8 +91,6 @@ if(isset($_POST['submit'])) {
 	<input name='time' type='text' id='time' value='$time' readonly><br>
 	<label for='r4c'>Reason for call</label>
 	<input name='r4c' type='text' id='r4c' required><br>
-	<label for='pId'>Associated Problem ID's</label>
-	<input name='pId' type='text' id='pId'><br>
 	<input type='submit' name='submit' id='submit' value='Submit'>		
 	</form>";
 

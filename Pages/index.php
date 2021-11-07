@@ -55,7 +55,6 @@
 					"date" => "30/10/2021",
 					"time" => "13:27",
 					"r4c" => "Issue with printer", 
-					"pId" => "P001"
 					),
 				array(
 					"id" => "C002", 
@@ -64,7 +63,6 @@
 					"date" => "31/10/2021", 
 					"time" => "9:10",
 					"r4c" => "Issue with MS Office applications", 
-					"pId" => "P002",
 					)
 			);
 //Stores call log entrys in the session "call_log" array allowing other web pages to access it		

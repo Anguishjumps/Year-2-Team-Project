@@ -53,7 +53,6 @@ th {
 		<th> Date </th>
 		<th> Time </th>
 		<th> Reason for Call </th>
-		<th> Associated Problem ID's </th>
 	</tr>
 <?php
 //Opens session on this page so call log table can be accessed
@@ -68,7 +67,6 @@ th {
 		."</td><td>".$row['date']
 		."</td><td>".$row['time']
 		."</td><td>".$row['r4c']
-		."</td><td>".$row['pId']
 		."</td></tr>");
 	};
 ?>
