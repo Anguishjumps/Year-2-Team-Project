@@ -7,6 +7,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<style type="text/css">
+		table{
+			border: 1px solid black;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			border-collapse: collapse; 
+		}
+		table:first-child{
+			margin-top: 50px;
+		}
+		td{
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+			padding: 3px;
+			padding-right: 10px;
+			text-align: center;
+			font-size: 14px;
+
+		}
+
+		th {
+			border-bottom: 1px solid black;
+			padding: 5px;
+		}
+
+		#formContainer{
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		.form_layout input{
+			display: block;
+		}
+		.form_layout label{
+			display: inline-block;
+		}
+		.form_layout select{
+			display: block;
+		}
+
+		#form{
+			margin-right: 30px;
+		}
+		.button_container{
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+			
+		}
+		button{
+			margin-right: 5px;
+		}
+		label{
+			margin-top: 10px;
+		}
+
+		h3{
+			text-align: center;
+			text-decoration: underline;
+		}
+	</style>
 </head>
 <body>
     <h3> Assigned Problems </h3>
@@ -14,6 +76,7 @@
         <tr id = 'header'>
             <th>Problem ID</th>
                 <th>Phone No.</th>
+                <th>Problem Type</th>
                 <th>Problem Notes</th>
                 <th>Hardware Serial No.</th>
                 <th>Operating System</th>
@@ -30,6 +93,7 @@
         <tr>
             <th>Problem ID</th>
                 <th>Phone No.</th>
+                <th>Problem Type</th>
                 <th>Problem Notes</th>
                 <th>Hardware Serial No.</th>
                 <th>Operating System</th>
@@ -99,12 +163,12 @@
         var userID = "0099";
 
                 var array = [
-                            ['P001', "07358613397", "Printer unresponsive", "H56478890", "-","-","0099","-","-"],
-                            ['P002', "07418613690", "-","-","Windows","Microsoft Office","0100","-","-"]]
+                            ['P001', "07358613397", "printer", "Printer unresponsive", "H56478890", "-","-","0099","-","-"],
+                            ['P002', "07418613690", "-","-","-","Windows","Microsoft Office","0100","-","-"]]
 
                 table = document.getElementById("tbody");
                 for(var i = 0; i < array.length; i++){
-                    if (userID == array[i][6]){
+                    if (userID == array[i][7]){
                         var newRow = table.insertRow(table.length);
                         for(var j = 0; j < array[i].length; j++){
                             var cell = newRow.insertCell(j);
@@ -138,7 +202,7 @@
                         // Inserting changed array into table 1
                         table = document.getElementById("tbody");
                         for(var i = 0; i < array.length; i++){
-                            if (userID == array[i][6]){
+                            if (userID == array[i][7]){
                                 var newRow = table.insertRow(table.length);
                                 for(var j = 0; j < array[i].length; j++){
                                     var cell = newRow.insertCell(j);
@@ -169,8 +233,8 @@
                 for(var j = 0; j < array[i].length; j++){
                     if(x == array[i][j]){
                         // Changing array value
-                        array[i][7]=y;
-                        array[i][8]=z;
+                        array[i][8]=y;
+                        array[i][9]=z;
                         console.log(array[i][2]);
                         //Clearing tables
                         $('#tbody').html("");
@@ -178,7 +242,7 @@
                         // Inserting changed array into table 1
                         table = document.getElementById("tbody");
                         for(var i = 0; i < array.length; i++){
-                            if (userID == array[i][6]){
+                            if (userID == array[i][7]){
                                 var newRow = table.insertRow(table.length);
                                 for(var j = 0; j < array[i].length; j++){
                                     var cell = newRow.insertCell(j);
@@ -209,7 +273,7 @@
                     if(x == array[i][j]){
                         console.log(y);
                         // Changing array value
-                        array[i][6]=y;
+                        array[i][7]=y;
                         console.log(array[i][2]);
                         //Clearing tables
                         $('#tbody').html("");
@@ -217,7 +281,7 @@
                         // Inserting changed array into table 1
                         table = document.getElementById("tbody");
                         for(var i = 0; i < array.length; i++){
-                            if (userID == array[i][6]){
+                            if (userID == array[i][7]){
                                 var newRow = table.insertRow(table.length);
                                 for(var j = 0; j < array[i].length; j++){
                                     var cell = newRow.insertCell(j);
