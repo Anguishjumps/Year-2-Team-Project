@@ -44,7 +44,13 @@ function reportdtb() {
 }
 
 function returntoindex() {
-	window.location.assign ("/Helpdesk Portal/helpdesk-index.php")
+	if(sessionStorage.getItem("userType")=="h"){
+		window.location.assign ("/Helpdesk Portal/helpdesk-index.php")
+	}
+	else{
+		window.location.assign ("/Specialist Portal/specialist-index.php")	
+	}
+	
 }
 
 </script>
