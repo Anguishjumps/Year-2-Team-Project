@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Problem Type Database</title>
+<title> Report Database</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -42,28 +42,26 @@ th {
 
 <button type="button" id = "return" onclick = "returntobrowse()" > Return </button>
 
-<p> Problem Types </p>
+<p> Report Table </p>
 
 <table>
 	
 	<tr>
-		<th> General Problem Type </th>
-		<th> Refgined Type </th>
+		<th> Report ID </th>
+		<th> Call ID </th>
+		<th> Problem ID </th>
 	</tr>
 	
 	<tr>
-		<td> Printing </td>
-		<td> Printing software </td>
+		<td> R001 </td>
+		<td> C001 </td>
+		<td> P001 </td>
 	</tr>
 	
 	<tr>
-		<td> Printing </td>
-		<td> Printer queue cancellation </td>
-	</tr>
-	
-	<tr>
-		<td> Word processing </td>
-		<td> Word processor tables </td>
+		<td> R002 </td>
+		<td> C002 </td>
+		<td> P002 </td>
 	</tr>
 	
 	
