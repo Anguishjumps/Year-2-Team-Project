@@ -47,7 +47,7 @@ th {
 <table>
 	
 	<tr>
-		<th> ID </th>
+		<th> Call ID </th>
 		<th> Caller ID </th>
 		<th> Operator Name </th>
 		<th> Date </th>
