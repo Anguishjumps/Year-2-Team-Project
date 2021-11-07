@@ -4,6 +4,10 @@
 <title>Call Log</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
@@ -21,6 +25,76 @@ table {
 th {
   padding: 10px;
 }
+
+table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-collapse: collapse; 
+}
+table:first-child{
+    margin-top: 50px;
+}
+td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 3px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+th {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+#formContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form_layout input{
+    display: block;
+}
+.form_layout label{
+    display: inline-block;
+}
+.form_layout select{
+    display: block;
+}
+
+#form{
+    margin-right: 30px;
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+button{
+    margin-right: 5px;
+}
+label{
+    margin-top: 10px;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.form_layout1 select{
+    display: block;
+}
+label{ 
+    display: inline-block;
+    width: 150px;
+}
  
 </style>
 
@@ -34,7 +108,7 @@ function returntoindex() {
 
 <body>
 <button type="button" id = "return" onclick = "returntoindex()" > Return Home </button>
-<h1>Recent calls</h1>
+<h3>Recent calls</h3>
 <table>
 	<tr>
 		<th> ID </th>
@@ -62,7 +136,7 @@ for($x = 0; $x < 10; $x++){
 	};
 };
 echo "</table><br>";
-if(isset($_POST['submit'])) {
+if(isset($_POST['submitCall'])) {
 //Once sumbit is pressed the data from the form is stored in the "newCall" array
 	$newCall = array(
 		"id" => $_POST["id"],
@@ -78,7 +152,8 @@ if(isset($_POST['submit'])) {
 	header("Refresh:0");
   } else {
 // Displays the form
-	echo " <form action='' method='post'>
+	echo "<div id = 'formContainer'>
+	<form action='' method='post'>
 	<label for='id'>ID</label>
 	<input name='id' type='text' id='id' value='$nextId' readonly><br>
 	<label for='cId'>Caller ID</label>
@@ -91,10 +166,112 @@ if(isset($_POST['submit'])) {
 	<input name='time' type='text' id='time' value='$time' readonly><br>
 	<label for='r4c'>Reason for call</label>
 	<input name='r4c' type='text' id='r4c' required><br>
-	<input type='submit' name='submit' id='submit' value='Submit'>		
-	</form>";
+	<input type='submit' name='submitCall' id='submitCall' value='SUBMIT'>		
+	</form></div>";
 
 };
 
 ?>
+   <table id = 'table'>
+        <tr>
+            <th>Problem ID</th>
+                <th>Problem Type</th>
+                <th>Problem Notes</th>
+                <th>Hardware Serial No.</th>
+                <th>Operating System</th>
+                <th>Software</th>
+                <th>Assigned ID</th>
+                <th>Solution Notes</th>
+                <th>Date</th>
+        </tr>
+        <tbody id = 'tbody2'></tbody>
+    </table>
+
+    <div id = "formContainer">
+        <!-- Change problem type -->
+        <div id = "form">
+            <div class = "form_layout2">
+                <label>Problem ID</label>
+                <input type="text" id = "problemID" required>
+            </div>
+            <div class = "form_layout2">
+                <label>Problem Type</label>
+                <input type="text" id = "problemType" required>
+            </div>
+            <div class = "form_layout2">
+                <label>Problem Notes</label>
+                <input type="text" id = "problemNotes">
+            </div>
+            <div class = "form_layout2">   
+                <label>Hardware Serial No.</label>
+                <input type="text" id = "hardwareSerial">
+            </div>
+            <div class = "form_layout2">  
+                <label>Operating System</label>
+                <input type="text" id = "os">
+            </div>
+            <div class = "form_layout2">
+                <label>Software</label>
+                <input type="text" id = "software">
+            </div>
+            <div class = "form_layout2">
+                <label>Assigned ID</label>
+                <input type="text" value = "003" id = "assignedID">
+            </div>
+            <div class = "form_layout2">
+                <label>Solution Notes</label>
+                <input type="text" id = "solutionNotes">
+            </div>
+            <div class = "form_layout2">
+                <label>Date</label>
+                <input type="text" id = "date2" value = "-" readonly>
+            </div>
+            
+                <div class="button_container">
+                <button id="submitForm"> SUBMIT </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var array = [
+                        ['P001', "printer", "Printer unresponsive", "H56478890", "-","-","004","-","-"],
+                        ['P002', "-","-","-","Windows","Microsoft Office","003","-","-"]]
+        table = document.getElementById("tbody2");
+        for(var i = 0; i < array.length; i++){
+            var newRow = table.insertRow(table.length);
+            for(var j = 0; j < array[i].length; j++){
+                var cell = newRow.insertCell(j);
+                cell.innerHTML = array[i][j];
+            }
+        }
+
+        $("#submitForm").click(function(){ 
+            var tempArray = []
+            var a = $('#problemID').val();
+            var c = $('#problemType').val();
+            var d = $('#problemNotes').val();
+            var e = $("#hardwareSerial").val();
+            var f = $("#os").val();
+            var g = $("#software").val();
+            var h = $('#assignedID').val();
+            var i = $('#solutionNotes').val();
+            var j = $('#date2').val();
+            tempArray.push(a,c,d,e,f,g,h,i,j);
+            array.push(tempArray);
+            console.log(array);
+            $('#tbody2').html("");
+            table = document.getElementById("tbody2");
+            for(var i = 0; i < array.length; i++){
+                var newRow = table.insertRow(table.length);
+                for(var j = 0; j < array[i].length; j++){
+                                var cell = newRow.insertCell(j);
+                                cell.innerHTML = array[i][j];
+                }
+
+            }   
+        });
+
+    </script>
+
 </body>
