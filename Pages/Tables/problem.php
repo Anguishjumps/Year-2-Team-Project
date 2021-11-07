@@ -53,7 +53,6 @@ th {
 		<th> Operating System </th>
 		<th> Affected Software </th>
 		<th> Problem Type </th>
-		<th> Number of Times Reported </th>
 		<th> Assigned To </th>
 		<th> Date Solved </th>
 		<th> Solution Notes </th>
@@ -66,7 +65,6 @@ th {
 		<td> - </td>
 		<td> - </td>
 		<td>  </td>
-		<td> 1 </td>
 		<td> 0004 </td>
 		<td>  </td>
 		<td>  </td>
@@ -79,7 +77,6 @@ th {
 		<td> Windows </td>
 		<td> Microsoft Office </td>
 		<td>  </td>
-		<td> 2 </td>
 		<td> 0003 </td>
 		<td> 31/10/2021 </td>
 		<td> Software corrupted </td>
