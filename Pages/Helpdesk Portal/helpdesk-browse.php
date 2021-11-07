@@ -34,6 +34,15 @@ function problemdtb() {
 function callsdtb() {
 	window.location.assign ("/Tables/calls.php")
 }
+
+function typesdtb() {
+	window.location.assign ("/Tables/problemtype.php")
+}
+
+function reportdtb() {
+	window.location.assign ("/Tables/reports.php")
+}
+
 function returntoindex() {
 	window.location.assign ("/Helpdesk Portal/helpdesk-index.php")
 }
@@ -78,6 +87,16 @@ td {
 		<td>Call Log</td>
 		<td> <button type="button" id = "call" onclick = "callsdtb()" >View</button> </td>
 	</tr>
+	<tr>
+		<td>Problem Types</td>
+		<td> <button type="button" id = "call" onclick = "typesdtb()" >View</button> </td>
+	</tr>
+	
+	<tr>
+		<td> Report Table </td>
+		<td> <button type="button" id = "call" onclick = "reportdtb()" >View</button> </td>
+	</tr>
+	
 </table>
 </body>
 
