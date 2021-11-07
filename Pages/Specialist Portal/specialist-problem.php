@@ -71,6 +71,9 @@
 	</style>
 </head>
 <body>
+	<form action="/Specialist Portal/specialist-index.php">
+		<input type="submit" name="submit" id="submit" value="Return Home" class="larger" /></td>	
+	</form>
     <h3> Assigned Problems </h3>
     <table id = 'table'>
         <tr>

@@ -59,7 +59,7 @@
 			</form>
 		  </tr>
 		  <tr>
-			<form action="">
+			<form action="/Helpdesk Portal/helpdesk-problem.php">
 			<td colspan=1><input type="submit" name="submit" id="submit" value="View Problems" class="larger" /></td>	
 			</form>
 		  </tr>

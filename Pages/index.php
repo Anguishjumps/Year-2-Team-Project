@@ -92,15 +92,19 @@
 		  </tr>
 		</table>
 		</form>
+		
 		<script type=text/javascript>
 			function loginCheck() {
 			  if ((document.getElementById("username").value == "helpdesk") && (document.getElementById("password").value == "123")) {
+				<?php $_SESSION['userType'] = "h";?>
 				document.getElementById("view").action = "Helpdesk Portal/helpdesk-index.php"
 			  }
 			  if ((document.getElementById("username").value == "specialist") && (document.getElementById("password").value == "234")) {
+				<?php $_SESSION['userType'] = "s";?>
 				document.getElementById("view").action = "Specialist Portal/specialist-index.php"
 			  }
 			  if ((document.getElementById("username").value == "analyst") && (document.getElementById("password").value == "345")) {
+				<?php $_SESSION['userType'] = "a";?>
 				document.getElementById("view").action = "Analyst Portal/analyst-index.php"
 			  }
 			}
