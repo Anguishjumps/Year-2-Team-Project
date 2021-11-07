@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Call Log</title>
+<title> Report Database</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -42,40 +42,30 @@ th {
 
 <button type="button" id = "return" onclick = "returntobrowse()" > Return </button>
 
-<p> Call Log </p>
+<p> Report Table </p>
 
 <table>
 	
 	<tr>
+		<th> Report ID </th>
 		<th> Call ID </th>
-		<th> Caller ID </th>
-		<th> Operator Name </th>
-		<th> Date </th>
-		<th> Time </th>
-		<th> Reason for Call </th>
-		<th> Associated Problem ID's </th>
+		<th> Problem ID </th>
 	</tr>
-<?php
-//Opens session on this page so call log table can be accessed
-	session_start();
-
-//Goes through each row in the call log table and echos it to the table.
-	foreach($_SESSION['call_log'] as $row){
-		echo(
-		"<tr><td>".$row['id']
-		."</td><td>".$row['cId']
-		."</td><td>".$row['oName']
-		."</td><td>".$row['date']
-		."</td><td>".$row['time']
-		."</td><td>".$row['r4c']
-		."</td><td>".$row['pId']
-		."</td></tr>");
-	};
-?>
+	
+	<tr>
+		<td> R001 </td>
+		<td> C001 </td>
+		<td> P001 </td>
+	</tr>
+	
+	<tr>
+		<td> R002 </td>
+		<td> C002 </td>
+		<td> P002 </td>
+	</tr>
+	
 	
 	
 </table>
 
 </body>
-
-</html>
