@@ -48,11 +48,11 @@ th {
 	
 	<tr>
 		<th> ID </th>
-		<th> Caller ID </th>
 		<th> Problem Notes </th>
 		<th> Hardware Serial No. </th>
 		<th> Operating System </th>
 		<th> Affected Software </th>
+		<th> Problem Type </th>
 		<th> Number of Times Reported </th>
 		<th> Assigned Specialist </th>
 		<th> Date Solved </th>
@@ -61,11 +61,11 @@ th {
 	
 	<tr>
 		<td> P001 </td>
-		<td> 0002 </td>
 		<td>  </td>
 		<td> 56478890 </td>
 		<td> - </td>
 		<td> - </td>
+		<td>  </td>
 		<td> 1 </td>
 		<td> S002 </td>
 		<td>  </td>
@@ -74,11 +74,11 @@ th {
 	
 	<tr>
 		<td> P002 </td>
-		<td> 0010 </td>
 		<td>  </td>
 		<td> - </td>
 		<td> Windows </td>
 		<td> Microsoft Office </td>
+		<td>  </td>
 		<td> 2 </td>
 		<td> S001 </td>
 		<td> 31/10/2021 </td>

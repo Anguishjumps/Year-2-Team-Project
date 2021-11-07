@@ -47,27 +47,18 @@ th {
 <table>
 	
 	<tr>
-		<th> ID </th>
-		<th> First Name </th>
-		<th> Last Name </th>
-		<th> Areas of Expertise </th>
-		<th> Open Problems </th>
+		<th> Employee ID </th>
+		<th> Area of Expertise </th>
 	</tr>
 	
 	<tr>
-		<td> S001 </td>
-		<td> Joshua </td>
-		<td> Smith </td>
-		<td> </td>
-		<td> 2 </td>
+		<td> 0004 </td>
+		<td> Hardware </td>
 	</tr>
 	
 	<tr>
-		<td> S002 </td>
-		<td> Jack </td>
-		<td> Peters </td>
-		<td> </td>
-		<td> 0 </td>
+		<td> 0004 </td>
+		<td> Word Processing </td>
 	</tr>
 	
 	
