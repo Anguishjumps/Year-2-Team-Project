@@ -27,7 +27,7 @@ table {
   <!--margin-left: auto; 
   margin-right: auto;-->
   table-layout: fixed;
-  width: 60%; 
+  width: 75%; 
 }
 
 th {
@@ -47,39 +47,42 @@ th {
 <table>
 	
 	<tr>
-		<th> ID </th>
+		<th> Problem ID </th>
+		<th> Problem Type </th>
 		<th> Problem Notes </th>
 		<th> Hardware Serial No. </th>
 		<th> Operating System </th>
-		<th> Affected Software </th>
-		<th> Problem Type </th>
-		<th> Assigned To </th>
-		<th> Date Solved </th>
+		<th> Software </th>
+		<th> Assigned ID </th>
 		<th> Solution Notes </th>
+		<th> Date Solved </th>
+		<th> Time Solved </th>
 	</tr>
 	
 	<tr>
 		<td> P001 </td>
-		<td>  </td>
-		<td> 56478890 </td>
+		<td> Printer </td>
+		<td> Printer unresponsive </td>
+		<td> H56478890 </td>
 		<td> - </td>
 		<td> - </td>
-		<td>  </td>
 		<td> 0004 </td>
-		<td>  </td>
-		<td>  </td>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
 	</tr>
 	
 	<tr>
 		<td> P002 </td>
-		<td>  </td>
+		<td> - </td>
+		<td> - </td>
 		<td> - </td>
 		<td> Windows </td>
 		<td> Microsoft Office </td>
-		<td>  </td>
 		<td> 0003 </td>
-		<td> 31/10/2021 </td>
-		<td> Software corrupted </td>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
 	</tr>
 	
 	
@@ -87,3 +90,5 @@ th {
 </table>
 
 </body>
+
+</html>
