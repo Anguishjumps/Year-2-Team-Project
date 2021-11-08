@@ -37,11 +37,6 @@
 				margin-right:auto;
 				text-align:center;
 			}
-			.fixed {
-				font-family: Courier, monospace;
-				white-space: pre;
-				background-color:cornsilk;
-			}
 		</style>
 		<?php 
 			$servername = "localhost"; //Data
@@ -54,14 +49,20 @@
 	<body>
 		<table border="0">
 		  <tr>
+			<td>Welcome to the Analyst portal! </td>
+		  </tr>
+		  <tr>
 			<form action="/Analyst Portal/analyst-view.php">
-			<td colspan=1><input type="submit" name="submit" id="submit" value="View Performance" class="larger" /></td>	
+			<td colspan=1><input type="submit" name="view_performance" id="view_performance" value="View Performance" class="larger" title="View statistics on equipment breakages and employee usefulness." /></td>	
 			</form>
 		  </tr>
 		  <tr>
 			<form action="/index.php">
-			<td colspan=1><input type="submit" name="submit" id="submit" value="Log Out" class="larger" /></td>	
+			<td colspan=1><input type="submit" name="log_out" id="log_out" value="Log Out" class="larger" title="Exit the Analyst portal" /></td>	
 			</form>
+		  </tr>
+		  <tr>
+			<td>Stuck? Hover over a button for a brief description of the functions it allows you to perform.</td>
 		  </tr>
 		  
 		

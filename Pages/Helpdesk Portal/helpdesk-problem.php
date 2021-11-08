@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View Problems</title>
 	<style type="text/css">
 		table{
 			border: 1px solid black;
@@ -111,6 +111,7 @@
     <div id = "formContainer">
         <!-- Change problem type -->
         <div id = "form">
+            <h3>Update Problem Type</h3>
             <div class = "form_layout">
                 <label>Problem ID</label>
                 <input type="text" id = "problemID">
@@ -127,6 +128,7 @@
 
             <!-- Change solution notes -->
         <div id = "form">
+			<h3>Close Existing Problem</h3>
             <div class = "form_layout">
                 <label>Problem ID</label>
                 <input type="text" id = "problemID2">
@@ -147,12 +149,13 @@
 
         <!-- Assigning specialist -->
         <div id = "form">
+			<h3>Assign a Specialist</h3>
             <div class = "form_layout">
                 <label>Problem ID</label>
                 <input type="text" id = "problemID3">
             </div>
             <div class = "form_layout"> 
-                <label>Assign Problem</label>
+                <label>Specialist ID</label>
                 <input type="text" id = "assignTo">
             </div>
             <div class="button_container">

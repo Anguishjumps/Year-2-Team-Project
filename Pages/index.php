@@ -37,11 +37,6 @@
 				margin-right:auto;
 				text-align:center;
 			}
-			.fixed {
-				font-family: Courier, monospace;
-				white-space: pre;
-				background-color:cornsilk;
-			}
 		</style>
 		<?php 
 //Opens sessions to allow 2d array to be passed between the webpages

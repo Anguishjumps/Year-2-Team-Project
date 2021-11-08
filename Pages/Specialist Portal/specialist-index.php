@@ -37,11 +37,6 @@
 				margin-right:auto;
 				text-align:center;
 			}
-			.fixed {
-				font-family: Courier, monospace;
-				white-space: pre;
-				background-color:cornsilk;
-			}
 		</style>
 		<?php 
 			$servername = "localhost"; //Data
@@ -54,19 +49,25 @@
 	<body>
 		<table border="0">
 		  <tr>
+			<td>Welcome to the Specialist portal! </td>
+		  </tr>
+		  <tr>
 			<form action="/Specialist Portal/specialist-problem.php">
-			<td colspan=1><input type="submit" name="submit" id="submit" value="View Problems" class="larger" /></td>	
+			<td colspan=1><input type="submit" name="view_problem" id="view_problem" value="View All Problems" class="larger" title="View a list of all problems and close solved problems." /></td>	
 			</form>
 		  </tr>
 		  <tr>
 			<form action="/Specialist Portal/specialist-browse.php">
-			<td colspan=1><input type="submit" name="submit" id="submit" value="Browse" class="larger" /></td>	
+			<td colspan=1><input type="submit" name="browse_tables" id="browse_tables" value="Browse Database" class="larger" title="View tables containing information on Specialists, Problem Types, and more."/></td>	
 			</form>
 		  </tr>
 		  <tr>
 			<form action="/index.php">
-			<td colspan=1><input type="submit" name="submit" id="submit" value="Log Out" class="larger" /></td>	
+			<td colspan=1><input type="submit" name="log_out" id="log_out" value="Log Out" class="larger" title="Exit the Specialist portal" /></td>	
 			</form>
+		  </tr>
+		  <tr>
+			<td>Stuck? Hover over a button for a brief description of the functions it allows you to perform.</td>
 		  </tr>
 		  
 		
