@@ -52,12 +52,12 @@ th {
 	</tr>
 	
 	<tr>
-		<td> Printing </td>
-		<td> Printing software </td>
+		<td> Printer </td>
+		<td> Printer unresponsive </td>
 	</tr>
 	
 	<tr>
-		<td> Printing </td>
+		<td> Printer </td>
 		<td> Printer queue cancellation </td>
 	</tr>
 	
